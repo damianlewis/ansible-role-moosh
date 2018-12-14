@@ -1,0 +1,22 @@
+galaxy_info:
+  role_name: Moosh
+  author: Damian Lewis
+  description: Installs Moosh for Moodle
+  license: BSD
+
+  min_ansible_version: 2.5
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - xenial
+    - bionic
+
+  galaxy_tags:
+  - cms
+  - moodle
+  - moosh
+  - web
+
+dependencies: []

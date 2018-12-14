@@ -1,0 +1,15 @@
+---
+- name: Check if Moosh is already installed
+  stat:
+    path: "{{ moosh_path }}"
+  register: moosh_installed
+
+- name: Add repository for Moosh
+  apt_repository:
+    repo: "{{ moosh_repo }}"
+  when: not moosh_installed.stat.exists
+
+- name: Install Moosh
+  apt:
+    name: moosh
+  when: not moosh_installed.stat.exists
