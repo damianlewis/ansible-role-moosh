@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: Moosh
+  role_name: moosh
   author: Damian Lewis
   description: Installs Moosh for Moodle
   license: BSD
